@@ -4,5 +4,6 @@ import Hello from '../../components/Hello'
 it('renders "Hello World"', () => {
   render(<Hello />)
   const myElement = screen.getByText('Hello World')
+  screen.debug()
   expect(myElement).toBeInTheDocument()
 })
