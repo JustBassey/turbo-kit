@@ -37,4 +37,16 @@ module.exports = {
       },
     },
   ],
+  ignorePatterns: [
+    '**/*.js',
+    '**/*.json',
+    'node_modules',
+    'public',
+    'styles',
+    '.next',
+    '.swc',
+    'coverage',
+    'dist',
+    '.turbo',
+  ],
 }
