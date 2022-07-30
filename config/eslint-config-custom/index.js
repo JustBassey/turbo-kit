@@ -11,14 +11,30 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json',
+    project: ['apps/*/tsconfig.json'],
     ecmaFeatures: {
       jsx: true,
     },
+
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
   },
+  overrides: [
+    {
+      env: {
+        jest: true,
+      },
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'off',
+          { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] },
+        ],
+      },
+    },
+  ],
 }
