@@ -6,9 +6,9 @@ Turbo-kit is a boilerplate [turborepo](https://turborepo.org/) build kit to quic
 
 ### Applications
 
-- **[Next.js](https://nextjs.org/)** - React framework for server-side-rendering.
-- **[Typescript](https://www.typescriptlang.org/)** - Superset of JavaScript with syntax for types.
-- **[Tailwindcss](https://nextjs.org/)** - Utility-first CSS framework.
+- [Next.js](https://nextjs.org/) - React framework for server-side-rendering.
+- [Typescript](https://www.typescriptlang.org/) - Superset of JavaScript with syntax for types.
+- [Tailwindcss](https://nextjs.org/) - Utility-first CSS framework.
 
 ### Utilities
 
@@ -18,7 +18,7 @@ Turbo-kit is a boilerplate [turborepo](https://turborepo.org/) build kit to quic
 - [Husky](https://typicode.github.io/husky/#/) - Manage linting and testing pre-commit.
 - [Jest](https://jestjs.io/) - Javascript testing framework.
 
-### Quick Start
+## Quick Start
 
 ```
 git clone https://github.com/JustBassey/turbo-kit.git
@@ -26,7 +26,7 @@ git clone https://github.com/JustBassey/turbo-kit.git
 
 ### Install Dependencies
 
-To install all dependencies using pnpm, run the following command:
+Install all dependencies using pnpm by running the following command:
 
 ```
 cd turbo-kit
